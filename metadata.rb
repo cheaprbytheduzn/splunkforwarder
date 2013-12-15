@@ -1,5 +1,5 @@
-# Author:: Ken Miles <mailto:ken.miles@hp.com>
-# Source:: https://github.com/cheaprbytheduzn/splunkforwarder
+#
+# Cookbook Name:: splunkforwarder
 # Copyright:: Copyright 2013 Hewlett-Packard, Inc
 # License:: Apache License 2.0
 
@@ -15,4 +15,3 @@ license 'Apache License 2.0'
 end
 
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-

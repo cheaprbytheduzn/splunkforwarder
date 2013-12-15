@@ -1,5 +1,7 @@
-# Author:: Ken Miles <mailto:ken.miles@hp.com>
-# Source:: https://github.com/cheaprbytheduzn/splunkforwarder
+#
+# Cookbook Name:: splunkforwarder
+# Attributes:: default
+#
 # Copyright:: Copyright 2013 Hewlett-Packard, Inc
 # License:: Apache License 2.0
 
@@ -10,4 +12,3 @@ default['splunkforwarder']['download_url'] = 'http://download.splunk.com/release
 default['splunkforwarder']['build'] = '185560'
 default['splunkforwarder']['version'] = '5.0.6'
 default['splunkforwarder']['install_options'] = ''
-

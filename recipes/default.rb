@@ -1,5 +1,6 @@
-# Author:: Ken Miles <mailto:ken.miles@hp.com>
-# Source:: https://github.com/cheaprbytheduzn/splunkforwarder
+#
+# Cookbook Name:: splunkforwarder
+# recipe:: default
 # Copyright:: Copyright 2013 Hewlett-Packard, Inc
 # License:: Apache License 2.0
 
