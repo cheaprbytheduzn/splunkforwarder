@@ -32,8 +32,6 @@ Examples:
 
 The Splunkforwarder package is relocatable.  Use `install_options` to install to an alternate location:
 
-`node['splunkforwarder']['install_options']` - To customize the installation
-
 ```javascript
 node['splunkforwarder']['install_options'] = "--allfiles --relocate /opt=/opt/apps/ms"
 ```

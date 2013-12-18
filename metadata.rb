@@ -4,7 +4,7 @@
 # License:: Apache License 2.0
 
 name    'splunkforwarder'
-version '0.1.0'
+version '0.1.1'
 
 maintainer 'Ken Miles'
 maintainer_email 'ken.miles@hp.com'
