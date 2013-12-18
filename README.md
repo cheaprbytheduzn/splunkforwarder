@@ -1,7 +1,9 @@
 splunkforwarder
 ===============
 
-Install and configure the Splunk Forwarder with Chef onto a Linux Client
+Install and configure the Splunk Forwarder with Chef onto a Linux Client.
+
+[![Build Status](https://secure.travis-ci.org/cheaprbytheduzn/splunkforwarder.png?branch=master)](http://travis-ci.org/cheaprbytheduzn/splunkforwarder)
 
 Requirements
 ------------
@@ -21,16 +23,16 @@ Tested on:
 Attributes
 ----------
 
-See attributes/default.rb for defaults.
+See attributes/default.rb for details and defaults.
 
 See http://www.splunk.com/download for latest available releases.
 See http://www.splunk.com/page/previous_releases for all available releases.
 
+Examples:
+
+The Splunkforwarder package is relocatable.  Use `install_options` to install to an alternate location:
+
 `node['splunkforwarder']['install_options']` - To customize the installation
-
-The Splunkforwarder package is relocatable.  
-
-Example of utilizing `install_options` to install with Yum to an alternate location:
 
 ```javascript
 node['splunkforwarder']['install_options'] = "--allfiles --relocate /opt=/opt/apps/ms"
