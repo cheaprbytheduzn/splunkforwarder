@@ -1,8 +1,8 @@
 # .travis.yml for Splunkforwarder Cookbook.
 
 script: 
-  - 'gem install foodcritic  && foodcritic -f any .'
-  - 'gem install rubocop && rubocop .'
+  - 'gem install --include-dependencies --no-rdoc --no-ri foodcritic && foodcritic -f any .'
+  - 'gem install --include-dependencies --no-rdoc --no-ri rubocop && rubocop .'
 rvm:
   - 1.9.3
   - 2.0.0
