@@ -12,3 +12,8 @@ default['splunkforwarder']['download_url'] = 'http://download.splunk.com/release
 default['splunkforwarder']['build'] = '185560'
 default['splunkforwarder']['version'] = '5.0.6'
 default['splunkforwarder']['install_options'] = ''
+
+default['splunkforwarder']['parent_dir'] = '/opt'
+default['splunkforwarder']['download_dir'] = '/usr/src'
+
+# default['splunkforwarder']['home'] = '/opt/splunkforwarder'

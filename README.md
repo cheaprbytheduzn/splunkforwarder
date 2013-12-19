@@ -25,15 +25,18 @@ Attributes
 
 See attributes/default.rb for details and defaults.
 
+Set `build` and `version` to specify a specific download.
+
 See http://www.splunk.com/download for latest available releases.
+
 See http://www.splunk.com/page/previous_releases for all available releases.
 
-Examples:
+Attribute Examples:
 
-The Splunkforwarder package is relocatable.  Use `install_options` to install to an alternate location:
+The Splunkforwarder package is relocatable.  Use `install_options` to install to an alternate location.  E.g. with Yum:
 
 ```javascript
-node['splunkforwarder']['install_options'] = "--allfiles --relocate /opt=/opt/apps/ms"
+node['splunkforwarder']['install_options'] = '--allfiles --relocate /opt=/opt/apps/ms'
 ```
 Author
 -----------------

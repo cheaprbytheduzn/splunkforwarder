@@ -5,7 +5,19 @@
 # Copyright:: Copyright 2013 Hewlett-Packard, Inc
 # License:: Apache License 2.0
 
-download_dir = '/usr/src'
+dirlist = []
+download_dir = node['splunkforwarder']['download_dir']
+dirlist << download_dir
+dirlist << node['splunkforwarder']['parent_dir']
+
+dirlist.each do |dir|
+  directory dir do
+    mode '0755'
+    owner 'root'
+    group 'root'
+    recursive true
+  end
+end
 
 # E.g:  /usr/src/splunkforwarder-5.0.6-185560-linux-2.6-x86_64.rpm
 package_prefix = [
@@ -33,8 +45,6 @@ package_url = [
   'linux',
   package_name
 ].join('/')
-
-directory download_dir
 
 def use_remote_file(pkg_file, package_url)
   remote_file 'download-package' do
